@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, '../Static')));
 
 
 /* GET home page. */
-router.get('*', function(req, res,next) {
+router.get('/', function(req, res,next) {
 	
 var requesturl = req.url.replace(/\?.*/gmi,'');
 	
