@@ -1,4 +1,5 @@
 var express = require('express');
+var serverless = require('serverless-http');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -9,6 +10,7 @@ var cons = require('consolidate');
 var fs = require('fs');
 var app = express();
 
+const router = express.Router();
 // view engine setup
 app.engine('html', cons.swig)
 app.set('views', path.join(__dirname, 'views'));
@@ -44,7 +46,8 @@ var requesturl = req.url.replace(/\?.*/gmi,'');
 	
 });
 
+app.use('/.netlify/functions/server', router);
 
-app.listen(process.env.PORT || 4000, function () {
-  console.log('Example app listening on port 4000!');
-});
+module.exports = app;
+module.exports.handler = serverless(app);
+
