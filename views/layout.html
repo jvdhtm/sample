@@ -217,9 +217,9 @@
 				var self = $(this);
 				var path = location.pathname
 				if (path == '/') {
-					path = '/index.html';
+					path = '/home.html';
 				}
-
+				var path = path.replace('/.netlify/functions/server','');
 				if (src.indexOf('pages') > -1) {
 					src = src.replace('*', path);
 				}

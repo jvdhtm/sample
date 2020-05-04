@@ -13,7 +13,7 @@ var app = express();
 const router = express.Router();
 // view engine setup
 app.engine('html', cons.swig)
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
@@ -22,31 +22,29 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'Static')));
+app.use(express.static(path.join(__dirname, '../Static')));
 
 
 /* GET home page. */
-app.get('*', function(req, res, next) {
+router.get('*', function(req, res,next) {
 	
 var requesturl = req.url.replace(/\?.*/gmi,'');
 	
-	var url = path.join(__dirname, 'Static/Components/pages/'+requesturl) ;
-	
+	var url = path.join(__dirname, '../Static/Components/pages/'+requesturl) ;
 	fs.exists(url, function(exists) { 
 		  if (exists) { 
 			 res.render('layout', { title: 'Express' });
 		  }
 		  else
 		  {
-			 res.render('error', { title: 'Express' });
+			es.render('error', { title: 'Express' });
 		  }
 	}); 
-	
-	
-	
+
 });
 
 app.use('/.netlify/functions/server', router);
+app.use('/', (req, res) => res.sendFile(path.join(__dirname, '../index.html')));
 
 module.exports = app;
 module.exports.handler = serverless(app);
