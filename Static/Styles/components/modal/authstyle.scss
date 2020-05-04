@@ -1,0 +1,329 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  .popup {
+    width: 90%;
+    z-index: 12;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    top: -200%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: white;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.73);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.73); }
+    @media screen and (min-width: 768px) {
+      .popup {
+        top: -150%;
+        width: 525px; } }
+    .popup--register .register-success-all {
+        margin-bottom: 0;
+        padding: 25px 15px;
+        display: none;
+    }
+    @media screen and (min-width: 768px){
+      .popup--register .register-success-all {
+          padding: 40px;
+      } }
+    .popup.popup--register .register-company {
+      padding: 15px;
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .popup.popup--register .register-company {
+          display: none;
+          padding: 40px;
+          min-height: 450px; } }
+      .popup.popup--register .register-company .form__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .popup.popup--register .register-company .form__header span {
+          cursor: pointer;
+          -webkit-text-stroke: 3px white;
+          font-size: 20px; }
+        .popup.popup--register .register-success-all .form__header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+        .popup.popup--register .register-success-all .form__header span {
+            cursor: pointer;
+            -webkit-text-stroke: 3px white;
+            font-size: 20px; }
+      .popup.popup--register .register-company form {
+        padding: 0; }
+      .popup.popup--register .register-company .input span.form__required {
+          bottom: 25px; }
+      .popup.popup--register .register-company label span {
+        font-weight: initial; }
+      .popup.popup--register .register-company .company-address {
+        padding-top: 30px;
+        padding-bottom: 30px;}
+          .popup.popup--register .register-company .company-address div {
+            font-size: 15.5px;
+            margin-top: 3px; }
+      .popup.popup--register .register-company .register-success__contact-block {
+        padding-top: 20px; }
+      .popup.popup--register .register-company .input img {
+        width: 20px;
+        height: 20px; }
+      .popup.popup--register .register-company .input span {
+        font-weight: bold; }
+      .popup.popup--register .register-company .input input[type="text"], .popup.popup--register .register-company .input input[type="email"] {
+        margin-bottom: 12px;
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray; }
+        .popup.popup--register .register-company .input input[type="text"]:focus, .popup.popup--register .register-company .input input[type="email"]:focus {
+          border-bottom: 0;
+          margin-top: 1px; }
+      .popup.popup--register .register-company .input input[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+        margin-top: 15px;
+        position: relative;
+        -webkit-appearance: none;
+        padding: 6px 6px;
+        outline: 1px solid;
+        border-bottom: none; }
+        .popup.popup--register .register-company .input input[type="checkbox"]:focus {
+          outline-offset: 0; }
+      .popup.popup--register .register-company .input input[type="checkbox"]:checked:after {
+        content: "x";
+        position: absolute;
+        position: absolute;
+        top: -3px;
+        left: 2.5px; }
+      .popup.popup--register .register-success__contact-person {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .popup.popup--register .register-success__contact-person label {
+          font-weight: normal; }
+        .popup.popup--register .register-success__contact-person .input {
+          width: 48%;
+          display: inline-block; }
+        #offentlig-forvaltning{
+          cursor:pointer; }
+        .form__register-company-customer .register-user-error{
+          display:none; }
+        .form__register .register-user-error{
+          display:none; }
+    .popup.popup--saved-basket {
+      padding: 15px; }
+      @media screen and (min-width: 768px) {
+        .popup.popup--saved-basket {
+          padding: 40px; } }
+      .popup.popup--saved-basket .form__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .popup.popup--saved-basket .form__header span {
+          cursor: pointer;
+          -webkit-text-stroke: 3px white;
+          font-size: 20px; }
+      .popup.popup--saved-basket p {
+        padding: 15px 0 5px 0; }
+      .popup.popup--saved-basket button {
+        width: 100%;
+        color: white;
+        border: none;
+        background: #2d8bcb;
+        padding: 10px 0;
+        margin-bottom: 5px; }
+    .popup form {
+      margin-bottom: 0;
+      padding: 25px 15px; }
+      @media screen and (min-width: 768px) {
+        .popup form {
+          padding: 40px; } }
+      .popup form .form__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .popup form .form__header label, .register-company .form__header label {
+          margin-bottom: 30px;
+          width: auto;
+          display: inline;
+          font-size: 12px;
+          font-weight: normal; }
+        .popup form .form__header span {
+          cursor: pointer;
+          -webkit-text-stroke: 3px white;
+          font-size: 20px; }
+      .popup form.form__forgot-pass {
+        display: none; }
+      .popup form .input {
+        position: relative; }
+        .popup form .input span.form__required {
+          position: absolute;
+          color: #ce3b28;
+          right: 5px;
+          top: 15px; }
+        .popup form .input.input-error input[type="text"] {
+          color: #ce3b28; }
+        .popup form .input.input-error .input__error-msg {
+          display: block; }
+        .popup form .input__error-msg {
+          display: none;
+          width: 100%;
+          background: #a9a195;
+          text-align: center;
+          color: white;
+          padding: 12px 0;
+          position: relative;
+          margin-top: -8px; }
+          .popup form .input__error-msg:after {
+            content: "";
+            position: absolute;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid #a9a195;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            top: -15px; }
+      .popup form label {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        position: relative; }
+      .popup form p {
+        padding-bottom: 15px;
+        position: relative; }
+        .popup form p span {
+          top: 20px;
+          position: relative; }
+          .popup form p span span {
+            color: red;
+            position: relative;
+            top: 0;
+            right: 2px; }
+      .popup form input {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray; }
+        .popup form input[type="text"], .popup form input[type="email"], .popup form input[type="password"] {
+          margin-bottom: 12px;
+          font-size: 14px; }
+          .popup form input[type="text"]:focus, .popup form input[type="email"]:focus, .popup form input[type="password"]:focus {
+            border-bottom: 0;
+            margin-top: 1px; }
+        .popup form input[type="checkbox"] {
+          width: auto;
+          margin-right: 10px;
+          margin-top: 15px;
+          position: relative;
+          -webkit-appearance: none;
+          padding: 6px 6px;
+          outline: 1px solid;
+          border-bottom: none; }
+          .popup form input[type="checkbox"]:focus {
+            outline-offset: 0; }
+        .popup form input[type="checkbox"]:checked:after {
+          content: "x";
+          position: absolute;
+          position: absolute;
+          top: -3px;
+          left: 2.5px; }
+        .popup form input[type="submit"] {
+          background: #333;
+          margin: 15px 0;
+          padding: 15px 0;
+          border: none;
+          color: white;
+          font-size: 20px; }
+      .popup form a {
+        color: black;
+        position: relative; }
+        .popup form a:after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          height: 1px;
+          background: gray; }
+      .popup form .form__business-costumer {
+        background: #ededed;
+        padding: 15px 15px 20px 15px;
+        margin-top: 10px; }
+        .popup form .form__business-costumer-info {
+          display: none; }
+          .popup form .form__business-costumer-info span {
+            display: block;
+            font-weight: bold; }
+          .popup form .form__business-costumer-info-select {
+            position: relative; }
+            .popup form .form__business-costumer-info-select select {
+              width: 100%;
+              -webkit-appearance: none;
+              border-radius: 0;
+              border-color: black;
+              padding: 8px 5px;
+              background: transparent;
+              position: relative; }
+              .popup form .form__business-costumer-info-select select option {
+                background: #ededed; }
+              .popup form .form__business-costumer-info-select select:focus {
+                outline: none; }
+            .popup form .form__business-costumer-info-select:after {
+              content: "\f107";
+              font-family: FontAwesome;
+              color: #333;
+              padding: 12px 8px;
+              position: absolute;
+              right: 0;
+              top: -8px;
+              font-size: 150%;
+              background: transparent;
+              z-index: 1;
+              text-align: center;
+              width: 12%;
+              height: 100%;
+              pointer-events: none;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+        .popup form .form__business-costumer input {
+          background: inherit; }
+          .popup form .form__business-costumer input[type="submit"] {
+            margin-bottom: 10px;
+            padding: 0;
+            color: black;
+            font-size: 14px;
+            padding: 8px 0;
+            border: 1px solid; }
+          .form__business-costumer .input_customer_number, .form__business-costumer .customer_number_label{
+            display: none }
+    .popup.popup--show {
+      top: 1%; }
+      @media screen and (min-width: 768px) {
+        .popup.popup--show {
+          top: 5%; } }
+  

@@ -1,0 +1,56 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3883992, 2020-03-26T11:07:56-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NHaasGroteskDSPro-45Lt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-display-45-light/
+ * Copyright: Copyright &amp;#x00A9; 2013 Monotype Imaging Inc. All rights reserved.
+ * 
+ * Webfont: NHaasGroteskDSPro-65Md by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-haas-grotesk/pro-display-65-medium/
+ * Copyright: Copyright &amp;#x00A9; 2013 Monotype Imaging Inc. All rights reserved.
+ * 
+ * Webfont: HelveticaNeueLTPro-Lt by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-helvetica/pro-45-light-189172/
+ * Copyright: Copyright &amp;#x00A9; 2014 Monotype Imaging Inc. All rights reserved.
+ * 
+ * Webfont: HelveticaNeueLTPro-Md by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-helvetica/pro-65-medium/
+ * Copyright: Copyright &amp;#x00A9; 2014 Monotype Imaging Inc. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b43d8");
+  
+@font-face {
+  src: url('webFonts/HelveticaNeueLTPro-Md/font.eot');
+  font-family: 'HelveticaNeueLTPro-Md';
+  src: url('webFonts/HelveticaNeueLTPro-Md/font.woff2') format('woff2'), url('webFonts/HelveticaNeueLTPro-Md/font.woff') format('woff'), url('webFonts/HelveticaNeueLTPro-Md/font.eot?#iefix') format('embedded-opentype'), url('webFonts/HelveticaNeueLTPro-Md/font.ttf') format('truetype');
+}
+@font-face {
+  src: url('webFonts/HelveticaNeueLTPro-Lt/font.eot');
+  font-family: 'HelveticaNeueLTPro-Lt';
+  src: url('webFonts/HelveticaNeueLTPro-Lt/font.woff2') format('woff2'), url('webFonts/HelveticaNeueLTPro-Lt/font.woff') format('woff'), url('webFonts/HelveticaNeueLTPro-Lt/font.eot?#iefix') format('embedded-opentype'), url('webFonts/HelveticaNeueLTPro-Lt/font.ttf') format('truetype');
+}
+@font-face {
+  src: url('webFonts/NHaasGroteskDSPro-45Lt/font.eot');
+  font-family: 'NHaasGroteskDSPro-45Lt';
+  src: url('webFonts/NHaasGroteskDSPro-45Lt/font.woff2') format('woff2'), url('webFonts/NHaasGroteskDSPro-45Lt/font.woff') format('woff'), url('webFonts/NHaasGroteskDSPro-45Lt/font.eot?#iefix') format('embedded-opentype'), url('webFonts/NHaasGroteskDSPro-45Lt/font.ttf') format('truetype');
+}
+@font-face {
+  src: url('webFonts/NHaasGroteskDSPro-65Md/font.eot');
+  font-family: 'NHaasGroteskDSPro-65Md';
+  src: url('webFonts/NHaasGroteskDSPro-65Md/font.woff2') format('woff2'), url('webFonts/NHaasGroteskDSPro-65Md/font.woff') format('woff'), url('webFonts/NHaasGroteskDSPro-65Md/font.eot?#iefix') format('embedded-opentype'), url('webFonts/NHaasGroteskDSPro-65Md/font.ttf') format('truetype');
+}
+

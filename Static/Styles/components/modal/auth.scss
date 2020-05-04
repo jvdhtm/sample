@@ -1,0 +1,561 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .checkny-popup {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s linear;
+    &--container{
+    z-index: 12;
+    width: 100%;
+    background: $white;
+    padding:20px;
+    display: none;
+    &.checkoutpage{
+      z-index: 1;
+    }
+    @media (min-width: 992px)
+    {
+      position: absolute;
+      top: 95px;
+      right: 0px;
+      width: auto;
+      min-width: 340px;
+      &:before{
+        content:'';
+        width: 0; 
+        height: 0; 
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-bottom: 14px solid $white;
+        position: absolute;
+        top: -14px;
+        left: 91%;
+        transform: translate(-50%, 0%);
+        z-index: 1;
+        
+      }
+      &:after{
+        content:'';
+        width: 0; 
+        height: 0; 
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid $grayDark;
+        position: absolute;
+        top: -15px;
+        left: 91%;
+        transform: translate(-50%, 0%);
+        
+      }
+      border: thin solid $grayDark;
+    }
+    &.active{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    @media (min-width:1200px)
+    {
+      top: 95px;
+      &.fullheight{
+        height: calc( 100vh - 80px);
+      }
+    }
+   
+  }
+    &.show{
+      opacity: 1;
+      display: flex;
+    }
+
+    .form__field {
+      position: relative;
+      .hint{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 14;
+        font-size: 10px;
+      }
+      .form__required {
+        color: #ce3b28;
+      }
+    }
+  }
+  .input_sendnewsletter{
+  
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+  .checkny-popup--register .register-success-all {
+    margin-bottom: 0;
+    padding: 25px 15px;
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .checkny-popup--register .register-success-all {
+      padding: 40px;
+    }
+  }
+  
+  .checkny-popup.checkny-popup--register {
+    .register-company {
+      padding: 15px;
+      display: none;
+
+
+      .form__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+  
+        span {
+          cursor: pointer;
+          -webkit-text-stroke: 3px white;
+          font-size: 20px;
+        }
+      }
+    }
+  
+    .register-success-all .form__header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+  
+      span {
+        cursor: pointer;
+        -webkit-text-stroke: 3px white;
+        font-size: 20px;
+      }
+    }
+  
+    .register-company {
+      form {
+        padding: 0;
+      }
+  
+      .input span.form__required {
+        bottom: 25px;
+      }
+  
+      label span {
+        font-weight: initial;
+      }
+  
+      .company-address {
+        padding-top: 30px;
+        padding-bottom: 30px;
+  
+        div {
+          font-size: 15.5px;
+          margin-top: 3px;
+        }
+      }
+  
+      .register-success__contact-block {
+        padding-top: 20px;
+      }
+  
+      .input {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+  
+        span {
+          font-family: 'HelveticaNeueLTPro-Md';
+        }
+  
+        input {
+          &[type="text"], &[type="email"] {
+            margin-bottom: 12px;
+            font-size: 14px;
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+          }
+  
+          &[type="text"]:focus, &[type="email"]:focus {
+            border-bottom: 0;
+            margin-top: 1px;
+          }
+  
+          &[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+            margin-top: 15px;
+            position: relative;
+            -webkit-appearance: none;
+            padding: 6px 6px;
+            outline: 1px solid;
+            border-bottom: none;
+  
+            &:focus {
+              outline-offset: 0;
+            }
+  
+            &:checked:after {
+              content: "x";
+              position: absolute;
+              position: absolute;
+              top: -3px;
+              left: 2.5px;
+            }
+          }
+        }
+      }
+    }
+  
+    .register-success__contact-person {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+  
+      label {
+        font-weight: normal;
+      }
+  
+      .input {
+        width: 48%;
+        display: inline-block;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .checkny-popup.checkny-popup--register .register-company {
+      display: none;
+      padding: 40px;
+      min-height: 450px;
+    }
+  }
+  
+  #offentlig-forvaltning {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .form__register-company-customer .register-user-error, .form__register .register-user-error {
+    display: none;
+  }
+  
+  .checkny-popup {
+    &.checkny-popup--saved-basket {
+      padding: 15px;
+  
+      .form__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+  
+        span {
+          cursor: pointer;
+          -webkit-text-stroke: 3px white;
+          font-size: 20px;
+        }
+      }
+  
+      p {
+        padding: 15px 0 5px 0;
+      }
+  
+      button {
+        width: 100%;
+        color: white;
+        border: none;
+        background: #2d8bcb;
+        padding: 10px 0;
+        margin-bottom: 5px;
+      }
+    }
+  
+    form {
+      margin-bottom: 0;
+      padding: 25px 15px;
+  
+      .form__header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+  
+        label {
+          margin-bottom: 30px;
+          width: auto;
+          display: inline;
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  
+
+  
+  @media screen and (min-width: 768px) {
+    .checkny-popup form {
+      padding: 20px;
+    }
+  }
+  
+  .register-company .form__header label {
+    margin-bottom: 30px;
+    width: auto;
+    display: inline;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  
+  .checkny-popup form {
+    .form__header span {
+      cursor: pointer;
+      -webkit-text-stroke: 3px white;
+      font-size: 20px;
+    }
+  
+    &.form__forgot-pass {
+      display: none;
+    }
+  
+    .input {
+      position: relative;
+  
+      span.form__required {
+        position: absolute;
+        color: #ce3b28;
+        right: 5px;
+        top: 15px;
+      }
+  
+      &.input-error {
+        input[type="text"] {
+          color: #ce3b28;
+        }
+  
+        .input__error-msg {
+          display: block;
+        }
+      }
+    }
+  
+    .input__error-msg {
+      display: none;
+      width: 100%;
+      background: #a9a195;
+      text-align: center;
+      color: white;
+      padding: 12px 0;
+      position: relative;
+      margin-top: -8px;
+  
+      &:after {
+        content: "";
+        position: absolute;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #a9a195;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: -15px;
+      }
+    }
+  
+    label {
+      width: 100%;
+      display: block;
+      font-family: 'HelveticaNeueLTPro-Md';
+      position: relative;
+      font-size: 12px;
+      &.small{
+        font-size: 10px;
+        font-weight: normal;
+      }
+    }
+  
+    p {
+      padding-bottom: 15px;
+      position: relative;
+  
+      span {
+        top: 20px;
+        position: relative;
+  
+        span {
+          color: red;
+          position: relative;
+          top: 0;
+          right: 2px;
+        }
+      }
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px 0;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid gray;
+  
+      &[type="text"], &[type="email"], &[type="password"] {
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+  
+      &[type="text"]:focus, &[type="email"]:focus, &[type="password"]:focus {
+        border-bottom: 0;
+        margin-top: 1px;
+      }
+  
+      &[type="checkbox"] {
+        width: auto;
+        margin-right: 10px;
+        margin-top: 15px;
+        position: relative;
+        -webkit-appearance: none;
+        padding: 6px 6px;
+        outline: 1px solid;
+        border-bottom: none;
+  
+        &:focus {
+          outline-offset: 0;
+        }
+  
+        &:checked:after {
+          content: "x";
+          position: absolute;
+          position: absolute;
+          top: -3px;
+          left: 2.5px;
+        }
+      }
+  
+      &[type="submit"] {
+        background: #333;
+        margin: 15px 0;
+        padding: 15px 0;
+        border: none;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  
+    a {
+      color: black;
+      position: relative;
+  
+      &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        height: 1px;
+        background: gray;
+      }
+    }
+  
+    .form__business-costumer {
+      margin-top: 15px;
+    }
+  
+    .form__business-costumer-info {
+      display: none;
+  
+      span {
+        display: block;
+        font-family: 'HelveticaNeueLTPro-Md';
+      }
+    }
+  
+    .form__business-costumer-info-select {
+      position: relative;
+  
+      select {
+        width: 100%;
+        -webkit-appearance: none;
+        border-radius: 0;
+        border-color: black;
+        padding: 8px 5px;
+        background: transparent;
+        position: relative;
+  
+        option {
+          background: #ededed;
+        }
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        color: #333;
+        padding: 12px 8px;
+        position: absolute;
+        right: 0;
+        top: -8px;
+        font-size: 150%;
+        background: transparent;
+        z-index: 1;
+        text-align: center;
+        width: 12%;
+        height: 100%;
+        pointer-events: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+    }
+  
+    .form__business-costumer input {
+      background: inherit;
+  
+      &[type="submit"] {
+        margin-bottom: 10px;
+        padding: 0;
+        color:  #343434;
+        font-size:14px;
+
+      }
+    }
+  }
+  
+  .form__business-costumer {
+    .input_customer_number, .customer_number_label {
+      display: none;
+    }
+  }
+  
+  .checkny-popup.checkny-popup--show {
+    top: 1%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .checkny-popup.checkny-popup--show {
+      top: 5%;
+    }
+  }

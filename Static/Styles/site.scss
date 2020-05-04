@@ -1,0 +1,41 @@
+@import '_bootstrap.scss'; //bootstrap
+@import 'primary-variables';
+@import 'include'; //primary-variables variables 
+@import 'custom'; //custom styles that overides bootstrap
+@import 'components/products/product'; //products
+@import 'components/content/content'; //content
+@import 'components/products/filter'; //filter
+@import 'components/products/product-blue-box'; //product-blue-box
+@import 'components/products/choose-brand'; //choose-brand
+@import 'components/products/search-result-list'; //search result list
+@import 'components/products/product-details'; //products-details
+@import 'components/products/products-new'; //products-details
+@import 'components/ribbons/ribbons'; //ribbons
+@import 'components/catagories/catagories'; //catagories
+@import 'components/map/map'; //map
+@import 'components/datapicker/datapicker';
+@import 'components/modal/registration__modal';
+@import 'components/buttons/buttons'; //buttons
+@import 'components/mypage/form'; //form
+@import 'components/mypage/order-history'; //order history
+@import 'components/header/header';
+@import 'components/newmenu/newmenu'; //header
+@import 'components/footer/footer'; //footer
+@import 'components/richtext/richtext'; //richtext
+@import 'components/breadcrumbs/breadcrumbs'; //breadcrumbs
+@import 'components/kundvagn/kundvagn.scss'; //minicart
+@import 'components/minicart/minicart'; //minicart
+@import 'components/modal/login-modal'; //modal
+@import 'components/modal/delivery-address';
+@import 'components/modal/auth'; //modal
+@import 'components/modal/authstyle'; //map
+@import 'components/customer-cart/customer-cart'; //Customer-cart
+@import 'components/checkout/checkout-form.scss'; //checkout form 
+@import 'components/checkout/checkout-content'; 
+@import 'components/checkout/checkout-new';//checkout content 
+@import 'components/modal/checkout__register';//modal
+@import 'components/search/suggestions'; //suggestions 
+@import 'components/specification/specification'; //specification 
+@import 'components/scroll-top/scroll-top'; //scroll-top 
+@import 'components/carousel/carousel'; //Custom carousel style
+@import 'components/bootstrap-select/bootstrap-select'; //Custom select styles

@@ -1,0 +1,105 @@
+<div class="productInfo col-lg-6 col-sm-6  col-md-6 ">
+	<div class="box">
+		<div id="backgroundPopup"></div>
+		<div class="product-heading">
+			<div class="product-title clearfix">
+				<div class="title">
+					<h2>Papper Office Depot Everyday A4 </h2>
+				</div>
+				<div class="image">
+					<img class="krav-image" src="/images/krav.jpg">
+				</div>
+			</div>
+			<div class="price">
+				<span>713,60</span>
+				<span class="currency">kr</span><span class="uom">/kt</span>
+				<br>
+			</div>
+			<div class="ordPrice">
+				<span>123,60</span>
+				<span class="currency">kr</span><span class="uom">/pkt</span>
+			</div>
+		</div>
+		<div class="product-buy-box">
+			<div class="input-group">
+				<input autocomplete="off" class="form-control" placeholder="1" type="number">
+				<span class="input-group-btn product-input">
+					<button class="btn btn-green" style="width: 100%;" type="submit">Lägg i varukorgen</button>
+				</span>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-md-7 col-sm-6">
+					<div class="product-buy-box-info">
+						<h5 class="small-text-gray">Leveranstid 1-2 vardagar</h5>
+						<h5 class="small-text-gray stock nocursor"><i class="fa fa-stop order-status" aria-hidden="true"></i>Lagerstatus: 100+ st</h5>
+						<div class="right right-text">
+							<span style="cursor: pointer" data-toggle="modal" data-target="#orderstatus-modal">Lagerstatus i butik</span>
+							<span> | </span>
+							<span style="cursor: pointer" class="order-text--js">Ange orderradskommentar</span>
+							<div class="order-menu cf" style="text-align: left; display: none;">
+								<div>
+									<label>Ange orderradsmärkning:</label>
+									<input type="text" name="comments_2580559" id="comments_2580559" value="" class="articleComment input-field" maxlength="30"
+									 _vkenabled="true" _originaltype="text">
+
+									<a class="redBtn" onclick="jQuery('.order-menu').hide();return false;">Spara</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-6 col-xs-6 staffledPrice">
+					<ul>
+						<li>
+							<span class="staffledPrice--quantity">1-7&nbsp;st:&nbsp;</span><span class="staffledPrice--price">236,00 kr/st</span>
+						</li>
+						<li>
+							<span class="staffledPrice--quantity">8-15&nbsp;st:&nbsp;</span><span class="staffledPrice--price">200,60 kr/st</span>
+						</li>
+						<li>
+							<span class="staffledPrice--quantity">16&nbsp;st&nbsp;+&nbsp;:&nbsp;</span><span class="staffledPrice--price">175,60 kr/st</span>
+						</li>
+						<li>
+							<span class="staffledPrice--quantity">16&nbsp;st&nbsp;+&nbsp;:&nbsp;</span><span class="staffledPrice--price">175,60 kr/st</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="product-text-info">
+			<p class="productDesc list-view-desc small-text-gray">
+				Suspendisse id enim non lectus volutpat bibendum id id arcu. Suspendisse metus velit, sagittis non justo vel, pellentesque
+				porta neque. Quisque pretium non turpis id blandit. Aenean luctus gravida tellus, et efficitur orci cursus sit amet.
+				Cras sit amet hendrerit magna. Cras id tortor eu massa blandit hendrerit vel ut ex. Donec tincidunt odio id aliquam condimentum.
+			</p>
+			<ul class="small-text-gray">
+				<li> Miljödeklarerat enligt EU-Ecolabel, Licnr: SE/011/01
+				</li>
+				<li> Ytvikt 80g
+				</li>
+				<li> 5 fp/kartong
+				</li>
+				<li> 48 kartonger/pall</li>
+			</ul>
+			<div class="small-text-gray">Artikelnummer: 1833513</div>
+			<br>
+			<a id="spec" class="specToggle" data-toggle="collapse" data-target="#specification">Visa Specifikation</a>
+		</div>
+
+
+	</div>
+</div>
+
+
+<script>
+	$(document).ready(function () {
+		$("#spec").click(function () {
+			$("#spec-icon").toggleClass("fa-minus-circle");
+		});
+	});
+
+	$(".order-text--js").click(function () {
+		$(".order-menu").toggle();
+	});
+
+</script>

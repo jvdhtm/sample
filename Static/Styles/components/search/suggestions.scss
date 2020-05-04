@@ -1,0 +1,49 @@
+.od__search
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0px 20px;
+	#mainSearchField{
+		float: none;
+		display: block;
+		border: none;
+		box-shadow: none;
+	}
+	.input-group{
+		border-radius: 25px;
+		border-bottom-right-radius: 25px;
+		border-top-right-radius: 25px;
+		width: 100%;
+		background:$white ;
+		padding-left: 40px;
+		overflow: hidden;
+	}
+	.btn-searchnew {
+		border: none;
+		fill:$black;
+		background-color: transparent;
+		position: absolute;
+		top:0px;
+		left:0px;
+		width: 40px;
+		height: 40px;
+		z-index: 2;
+		top: -13px;
+		left: -14px;
+		svg{
+		    width: 40px;
+    		height: 40px;
+		}
+		&:hover{
+			background-color: transparent;
+		}
+	}
+}
+.search{
+	&-suggestion
+	{
+		a {
+			text-decoration:underline;
+		}
+	}
+}

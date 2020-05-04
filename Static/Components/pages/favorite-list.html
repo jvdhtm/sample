@@ -1,0 +1,88 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+            <h1>Favoritlistor</h1>
+            <p>I en favoritlista kan du spara artiklar som du ofta beställer. Du kan ha flera olika favoritlistor och du kan
+                alltid beställa hela listan eller delar av den. Favoritlistorna kan underlätta och snabba på ditt inköpsarbete
+                om du navänder den på ett smart sätt!</p>
+        </div>
+    </div>
+
+    <div class="form-group row" style="margin-top: 20px;">
+        <div class="col-xs-12">
+            <label style="float:left;" for="inputKey" class="control-label">Vald favoritlista: <strong>Javier33</strong></label>
+            <div class="col-md-3 no-padding">
+                <select class="form-control">
+                <option>Javier33</option>
+                <option>Javier44</option>
+                <option>Javier55</option>
+            </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-xs-12 btn-toolbar">
+            <button class="btn btn-primary">Ny favoritlista</button>
+            <button class="btn btn-primary">Döp om favoritlista</button>
+            <button class="btn btn-primary">Kopiera favoritlista</button>
+            <button class="btn btn-primary">Radera favoritlista</button>
+            <button class="btn btn-primary">Dela favoritlista</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="cart-header form-area">
+                <div class="clearfix">
+                    <div class="col-md-4 col-xs-6 text-left  padding-xs-5 ">
+                        <label>
+				Artikelnr:
+				</label>
+                        <input id="article-number" value="" class="form-control" type="text" maxlength="40">
+                    </div>
+                    <div class="col-md-2 col-xs-6 text-left  padding-xs-5 ">
+                        <label>
+				Antal:
+				</label>
+                        <input id="antal" value="" class="form-control" type="text" maxlength="40">
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-left  padding-xs-5 ">
+                        <label>
+				Orderadkommentar:
+				</label>
+                        <input id="order-comment" value="" class="form-control" type="text" maxlength="40">
+                    </div>
+                    <div class="col-md-3 col-xs-12 text-left  padding-xs-5 ">
+                        <button class="btn btn-primary" style="margin-top: 26px;">Lägg till artikel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="cart-title padding-xs-5 padding-sm-0 ">
+                <div class="clearfix">
+                    <div class="col-sm-12 col-xs-12 no-padding" style="margin-top: 24px;">
+                        <button class="btn btn-primary">Spara</button>
+                        <button class="btn btn-buy">Lägg markerade artiklar i kundvagnen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="customer-cart clearfix">
+                <compontent src="/Components/comp/checkout-items-list-cart.html"></compontent>
+            </div>
+            <div class="cart-title padding-xs-5 padding-sm-0 ">
+                <div class="clearfix">
+
+                    <div class="col-sm-12 col-xs-6 text-right no-padding" style="margin-top: 10px;">
+                        <button class="btn btn-buy">Lägg markerade artiklar i kundvagnen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

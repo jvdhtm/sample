@@ -1,0 +1,189 @@
+.kundvagn {
+
+  &__label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.97;
+    
+  }
+  &__body{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: calc( 100% - 250px);
+  }
+  &__footer{
+    display: flex;
+    margin-top: 40px;
+  }
+  &__amount{
+    text-align: right;
+    display: block;
+    font-weight: normal;
+   
+    
+  }
+  &__clientarea{
+    width: 50%;
+    position: relative;
+    span{
+      border-bottom: thin solid $grayDark;
+    }
+    
+    &--icon{
+      height: 60px;
+      width:60px;
+      position: absolute;
+      top: -25px;
+      left: -7px;
+    }
+    &--label{
+     padding-left: 35px; 
+     font-size: 14px;
+    }
+  }
+  &__action{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    width: 50%;
+    span{
+      border-bottom: thin solid $grayDark;
+    }
+  }
+  .clear-mini-shopping-cart{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    display: block;
+
+  }
+  &__remove {
+    border: 2px solid #cecece;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    display: block;
+    padding: 6.5px;
+    position: absolute;
+    top: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+    left: 18%;
+    overflow: hidden;
+    &--icon{
+      height: 33px !important;
+      width: 33px!important;
+      top:auto !important;
+    }
+  } 
+  &__shiping{
+
+    display: flex;
+    border-bottom: thin solid $grayDark;;
+    &--icon{
+      width: 60px;
+      height: 60px;
+      display: block;
+    }
+    &--label{
+      display: flex;
+      align-items: center;
+      span{
+        position: relative;
+        top:3px;
+        font-size: 14px;
+        font-family: 'HelveticaNeueLTPro-Md';
+        padding-left: 5px;
+      }
+    }
+  }
+  &-btn-group{
+
+    height: 135px;
+  }
+
+  &-items {
+      padding:5px 5px ;
+      @media (min-width: 1200px)
+      {
+        padding:15px 5px;
+      }
+      display: flex;
+      border-bottom: thin solid $grayDark;
+      &:first-child{
+        border-top: thin solid $grayDark;
+      }
+      &__img{
+          width:15% ;
+          position: relative;
+          img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 100%;
+            z-index: -1;
+          }
+          
+        
+      }
+      &__details{
+        width:50% ;
+        padding: 0px 15px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+      }
+      &__name{
+        font-size: 14px;
+        font-family: 'HelveticaNeueLTPro-Md';
+        display: block;
+        text-align: left;
+      }
+      &__variation{
+        font-size: 14px;
+        font-family: 'HelveticaNeueLTPro-Md';
+        text-align: left;
+        &--number{
+          font-weight:normal;
+        }
+        display: block;
+      }
+      &-content {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        flex-grow: 1;
+        max-height: calc(100% - 230px);
+        overflow-y: auto;
+      }
+
+      &-total
+      {
+        padding: 5px;
+       
+      }
+      &__price{
+        font-size: 16px;
+        width:35% ;
+        text-align: right;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        .price{
+          font-size: 14px;
+          font-weight:normal;
+        }
+        .total-price{
+          font-family: 'HelveticaNeueLTPro-Md';
+        }
+      }
+    }
+    .discounted{
+      color: $red;
+    }
+  }

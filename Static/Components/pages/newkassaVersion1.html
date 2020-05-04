@@ -1,0 +1,203 @@
+
+<div class="flex-row">
+    <div class="left-col">
+        <div class="continue__shopping">
+            <a href="/" class="btn btn-primary">Fortsätt handla</a>
+        </div>
+        <div class="checkout-ny__title ">
+            <h4 class="--bold">Konto / användarnamn</h4>
+            <label>
+                daniel@kramgo.se
+            </label>
+         </div>
+        <div class="checkout-ny">
+            <div class="checkout-ny__title --bold"><h4>Dina kontaktuppgifter och leveransadress</h4> </div>
+            <form class="checkout-ny-form__kassa">
+                <div class="checkout-ny-form--block">
+                    <div class="field --line" >
+                        <input type="text" id="firsttname" class="field__input notempty" value="john">
+                        <label>Förnamn</label>
+                        <span class="form__required">*</span>
+                    </div>
+                    <div class="field --line">
+                        <input  id="aftarname" class="field__input notempty" value="doe">
+                        <label>Efternamn</label>
+                        <span class="form__required">*</span>
+                    </div>
+                </div>
+                <div class="checkout-ny-form--block">
+                    <div class="field full --line" >
+                        <input type="text" id="address" class="field__input notempty" value="Godisvägen 123">
+                        <label>Address</label>
+                        <span class="form__required">*</span>
+                    </div>
+                </div>
+                <div class="checkout-ny-form--block">
+                    <div class="field --line" >
+                        <input type="postcode" id="firsttname" class="field__input notempty"  value="112 27">
+                        <label>Postnummer</label>
+                        <span class="form__required">*</span>
+                    </div>
+                    <div class="field --line">
+                        <input  id="city" class="field__input notempty" value="Stockholm">
+                        <label>Postort</label>
+                        <span class="form__required">*</span>
+                    </div>
+                </div>
+                <div class="checkout-ny-form__delivery">
+                    <div class="checkout-ny__title --bold"><h4>Leveranssätt</h4> </div>
+                    <div class="checkout-ny__shipping">
+                        <div class="field full">
+                            <div class="field__radiobox">
+                                <input type="radio" checked name="delivery" data-target="#standardshipping" class="selectshipping--js">
+                                <span class="field__radiobox--box">
+                                    <span class="field__radiobox--container">
+                                    </span>
+                                </span>
+                                <h5 class="--higher --twoline">
+                                    Standardfrakt
+                                    <span>
+                                        Vid beställning innan kl 14 levereras dina varor dagen efter.
+                                    </span>
+                                </h5>
+                                <div class="field__radiobox--icon">
+                                    <svg viewBox="0 0 60 60">
+                                        <use href="#trackdelivery"></use>
+                                    </svg>
+                                    <span>
+                                        25 kr
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field__radiobox">
+                                <input type="radio"  name="delivery" data-target="#findbutik" class="selectshipping--js">
+                                <span class="field__radiobox--box">
+                                    <span class="field__radiobox--container">
+                                    </span>
+                                </span>
+                                <h5>Hämta beställningen i butik</h5>
+                                <div class="field__radiobox--icon">
+                                    <svg viewBox="0 0 60 60" >
+                                        <use href="#storefinder"></use>
+                                    </svg>
+                                    <span class="--bold">
+                                        Fritt!
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="standardshipping" class="delivery__options" style="display: block;">
+                    <div class="checkout-ny-form--block">
+                        <div class="field full" >
+                            <input type="text" id="delivery-details" class="field__input" >
+                            <label>Leveransinformation <span>(Våning, portkod etc):</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div id="findbutik" class="delivery__options" style="display: none;">
+                    <div class="checkout-ny-form--block bigger">
+                        <div class="btn-checkout--white ">
+                            Hitta butik nära mig
+                        </div>
+                        <div class="btn-checkout--white select__OD">
+                            <div class="select__OD--selected select__OD--js">
+                                <div class="select__OD--value">
+                                    <label>Butiksnamn<span>address 12, 123 45 STOCKHOLM, Sverige</span></label>
+                                </div>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" id="butik" style="display: none;" value="Butiksnamn">
+                           
+                            <ul class="select__OD--block">
+                                <li class="select__OD--each" value="butik#1">
+                                    <label>Butiksnamn1<span>address 12, 123 45 STOCKHOLM, Sverige</span></label>
+                                </li>
+                                <li class="select__OD--each" value="butik#3">
+                                    <label>Butiksnamn2<span>address 12, 123 45 STOCKHOLM, Sverige</span></label>
+                                </li>
+                                <li class="select__OD--each" value="butik#2">
+                                    <label>Butiksnamn3<span>address 12, 123 45 STOCKHOLM, Sverige</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-ny-form--block">
+                    <div class="field full --line" >
+                        <input type="text" id="owner-telephone" class="field__input" >
+                        <label class="mobile--higher">Mobilenummer </label>
+                        <span class="form__required">*</span>
+                    </div>
+                </div>
+                
+                <div class="checkout-ny__finnish">
+                    <div class="checkout-ny__title --bold"><h4>Slutför Beställning</h4> </div>
+                    <div class="field full">
+                        <div class="field__radiobox">
+                            <input type="radio" checked="" name="shoppingmethod"  >
+                            <span class="field__radiobox--box">
+                                <span class="field__radiobox--container">
+                                </span>
+                            </span>
+                            <h5 >
+                                Betalkort
+                                <span>
+                                    Visa, Mastercard m fl.
+                                </span>
+
+                            </h5>
+                            <div class="field__radiobox--image">
+                                <img class="visa" src="../images/visa-png.png" alt="">
+                                <img class="master" src="../images/master.png" alt="">
+                            </div>
+                        </div>
+                        <div class="checkout-ny--total">
+                            <div class="checkout-ny--total__label bold">Totalt inkl. moms:</div>
+                            <span class="checkout-ny--total__amount bold">1 624,00kr</span>
+                        </div>
+                        <div class="btn btn-checkout--green">
+                            Slutför köp
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </form>
+        </div>
+    </div>
+    <div class="right-col">
+
+    </div>
+</div>
+<div class="checkout-ny__footer">
+    <div class="flex-row">
+        <div class="left-col">
+            <div class="checkout-ny__footer--block">
+                <div class="checkout-ny__footer--col">
+                    <div class="checkout-ny__footer--title">
+                        <h4>Handla tryggt med oss</h4>
+                        <svg class="icon icon-trust" viewBox="0 0 60 60">
+                            <use href="#trusticon"></use>
+                        </svg>
+                    </div>
+                    <p> Du kan alltid känna dig trygg när du handlar hos Office Depot. Vi är medlem i Trygg E-handel och följer Trygg E-handels krav för en trygg Voch säker E-handelsplats.
+                        </p>
+                </div>
+                <div class="checkout-ny__footer--col">
+                    <div class="checkout-ny__footer--title">
+                        <h4>Behöver du hjälp?</h4>
+                        <svg class="icon icon-faq" viewBox="0 0 60 60">
+                            <use href="#faq"></use>
+                        </svg>
+                    </div>
+                    <p>Ring gratis på 020-560 560
+                        eller e-posta till se-kundcenter@officedepot.eu</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">   
+        </div>
+    </div>
+</div>

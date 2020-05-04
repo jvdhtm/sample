@@ -1,0 +1,48 @@
+
+
+.od-filter{
+    display: inline-block;
+    padding:0px;
+    color: #999;
+}
+
+.list-config{
+    margin-bottom: 10px;
+    font-size: 11px;
+    padding: 10px 5px;
+    background: #f9f9f9;
+}
+
+.col-sm-2.right{
+    float: right;
+}
+
+.more-filters {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #9e9d9d;
+
+    a {
+        margin-left: 2px;
+        color: #9e9d9d;
+    }
+}
+
+.hidden-filters--js {
+    display: none;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.fa-check {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    margin-top: 0px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a span.fa-check {
+    display: none;
+}
+
+.fix-height {
+    height: 43px;
+}

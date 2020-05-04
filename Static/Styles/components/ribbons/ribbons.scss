@@ -1,0 +1,234 @@
+//colors
+$white: #ffffff;
+$black_25: rgba(0, 0, 0, 0.25);
+$ribbon_orange: #f36e24;
+
+//urls
+$url_0: url(/images/blad50.png);
+
+//@extend-elements
+//.ribbon, .miljoribbon
+.ribbon {
+	display: block;
+	width: 50px;
+	height: 50px;
+	font-size: 11px;
+	z-index: 0;
+	color: $white;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: 0 1px 1px $black_25;
+	zoom: 1;
+	filter: none;
+	background-color: $ribbon_orange;
+	border-radius: 50%;
+	position: absolute;
+}
+.thumbnail-inner .ribbon-selected {
+	height: 17px;
+	right: 20px;
+	left: 20px;
+	bottom: 160px;
+	line-height: 18px;
+	font-size: 12px;
+	top: 130px;
+	text-align: center;
+}
+.image-box--details .ribbon-selected {
+    height: 23px;
+    right: 200px;
+    left: 200px;
+    bottom: 200px;
+    line-height: 23px;
+    font-size: 15px;
+    text-align: center;
+}
+.ribbon-selected {
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ff771c;
+    color: white;
+    opacity: 1;
+    border-radius: 6px;
+}
+.ribbon.contract, .ribbon.greenIcon {
+    background: url(/Static/images/ribbon-contract_50.png) no-repeat;
+}
+.ribbon.contract, .ribbon.greenIcon {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 70;
+    text-align: left;
+    line-height: 50px;
+    zoom: 1;
+    filter: none;
+    border-radius: 0%;
+}
+.ribbon-contract {
+    display: block;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    z-index: 70;
+    text-align: left;
+    line-height: 38px;
+    zoom: 1;
+    filter: none;
+}
+.ribbon-contract.item-contract    {background: url(/Static/images/ribbon-contract.png) no-repeat;}
+.ribbon-contract-prod {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 70;
+    text-align: left;
+    line-height: 50px;
+    zoom: 1;
+    filter: none;
+}
+.ribbon-contract-prod.item-contract    {background: url(/Static/images/ribbon-contract_50.png) no-repeat;}
+.ribbon-selected{
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ff771c;
+    color:white;
+    opacity: 1;
+    border-radius: 6px;
+}
+.centerImg .ribbon-selected   {
+    height: 11px;
+    right: 0px;
+    left: 0px;
+    line-height: 12px;
+    bottom: -1px;
+    font-size: 9px;
+}
+.box-item-img .ribbon-selected   {
+    height: 17px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    line-height: 18px;
+    font-size: 12px;
+}
+.zoom-image .ribbon-selected   {
+    height: 17px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    line-height: 17px;
+    font-size: 15px;
+}
+.list-view-img .ribbon-selected{
+    height: 17px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    line-height: 18px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+.thumbnail .ribbon {
+	position: absolute;
+	top: 10px;
+	left: 25px;
+}
+.product-items .miljoribbon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	line-height: 15px;
+	padding-top: 15px;
+}
+.productImage .miljoribbon {
+    width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /*background: url(/Static/images/blad50.png) no-repeat;*/
+  line-height: 15px;
+  padding-top: 15px;
+}
+ .productDetails .productImage .ribbon {
+  width: 85px;
+  height: 85px;
+  padding-top: 35px;
+  font-size: 16px;
+}
+
+.ribbon.curr-campaign {
+	line-height: 10px;
+	padding-top: 20px;
+	word-spacing: 20px;
+	background-color: #f36e24;
+	position: absolute;
+}
+
+.ribbon.new-bargain {
+	line-height: 10px;
+	padding-top: 20px;
+	word-spacing: 20px;
+	background-color: #97c00e;
+	position: absolute;
+  }
+
+.ribbon.new-campaign {
+line-height: 10px;
+padding-top: 20px;
+word-spacing: 20px;
+background-color: #fbbb01; 
+position: absolute;
+}
+
+.ribbon.item-new {
+	line-height: 10px;
+	padding-top: 20px;
+	word-spacing: 20px;
+	background-color: #008ac9;
+	position: absolute;
+}
+.ribbon.web-campaign {
+	line-height: 10px;
+	padding-top: 15px;
+	word-spacing: 20px;
+	background-color: #f36e24;
+	position: absolute;
+}
+.productDetails .productImage .ribbon.web-campaign {
+	line-height: 15px;
+	padding-top: 28px;
+}
+.ribbon.webtext-campaign {
+	display: none;
+}
+.webtext-campaign-label {
+	font-size: 18px;
+	color: #7d7d7d;
+}
+.ribbon.selected {
+	line-height: 10px;
+	padding-top: 15px;
+	word-spacing: 20px;
+	background-color: #00aaee;
+	position: absolute;
+}
+.ribbon.green {
+	line-height: 10px;
+	padding-top: 15px;
+	word-spacing: 20px;
+	background-color: #00aa11;
+	position: absolute;
+}
+.ribbon.lagpris {
+  line-height: 10px;
+  padding-top: 15px;
+  word-spacing: 20px;
+  background-color: #DC002e;
+  position: absolute;
+}

@@ -1,0 +1,113 @@
+<form action="" id="filterForm" method="get" name="filterForm">
+	<div class="list-config row">
+
+		<div class="dropdown-filters col-sm-8">
+
+			<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+				<select id="filter1" title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-98">
+          <option>filter</option>
+          <option>filter 1</option>
+          <option>filter 2</option>
+          <option>filter 3</option>
+				</select>
+			</div>
+
+			<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+				<select id="filter2" title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-99">
+          <option>filter</option>
+          <option>filter 1</option>
+          <option>filter 2</option>
+          <option>filter 3</option>
+				</select>
+			</div>
+
+			<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+				<select title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-100">
+          <option>filter</option>
+          <option>filter 1</option>
+          <option>filter 2</option>
+          <option>filter 3</option>
+				</select>
+			</div>
+
+			<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+				<a class="btn-search btn btn-primary">Filtrera</a>
+				<a class="btn btn-danger clear-filter--js" style="border: none">Rensa</a>
+			</div>
+
+			<div class="hidden-filters--js">
+
+				<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+					<select title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-100">
+          <option>filter</option>
+          <option>filter 1</option>
+          <option>filter 2</option>
+          <option>filter 3</option>
+					</select>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+					<select title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-100">
+						<option>filter</option>
+						<option>filter 1</option>
+						<option>filter 2</option>
+						<option>filter 3</option>
+					</select>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+					<select title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-100">
+          <option>filter</option>
+          <option>filter 1</option>
+          <option>filter 2</option>
+          <option>filter 3</option>
+					</select>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 padding-xs-5 fix-height">
+					<select title="Välj..." class="selectpicker show-menu-arrow form-control" multiple tabindex="-101">
+          <option>filter</option>
+          <option>filter 1</option>
+          <option>filter 2</option>
+          <option>filter 3</option>
+					</select>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="more-filters">
+				<i class="fa fa-plus-square" aria-hidden="true"><a id="show-filters">Visa fler filter</a></i>
+			</div>
+		</div>
+		<div class="col-sm-2 right">
+			<div class="col-xs-12 padding-xs-5 fix-height">
+				<select class="form-control od-filter right">
+				   <optgroup label="filter-header">
+					<option>Populäraste</option>
+					<option>filter2</option>
+					<option>filter3</option>
+				  </optgroup>
+				  <optgroup label="filter-header">
+					<option>filter4</option>
+					<option>filter5</option>
+					<option>filter6</option>
+				  </optgroup>
+				</select>
+			</div>
+		</div>
+	</div>
+</form>
+
+<script>
+	$("#show-filters").on('click', function () {
+		$(".hidden-filters--js").toggle();
+	});
+	$(".selectpicker").selectpicker("render");
+
+	$(".clear-filter--js").on("click", function() {
+		$('.selectpicker').selectpicker('deselectAll');
+	});
+
+</script>

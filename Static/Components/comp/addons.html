@@ -1,0 +1,399 @@
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+    <div class="modal-dialog" role="document">
+        
+
+
+<div class="popup popup--login">
+    <form class="form__login">
+        <div class="form__header"><label>Logga in</label> <span class="close-popup--js fa fa-times" data-dismiss="modal" aria-label="Close"></span></div>
+        <label>Användarnamn</label>
+        <div class="input" id="username_input">
+            <input type="text" id="username">
+        </div>
+        <label>Lösenord</label>
+        <div class="input" id="password_input">
+            <input type="password" id="password">
+        </div>
+        <input id="remember_me" type="checkbox">Kom ihåg mig vid nästa inloggningstillfälle
+        <input disable="" value="Logga in" type="submit" id="login-button">
+        <a id="forgot-pass--js">Har du glömt ditt användarnamn eller lösenord?</a>
+    </form>
+    <form class="form__forgot-pass">
+    <div class="form__header"><label>Glömt ditt användarnamn eller lösenord?</label> <span class="close-popup--js fa fa-times" data-dismiss="modal" aria-label="Close"></span></div>
+    <label class="js-to-hide">Ange din epostadress</label>
+    <div class="input js-to-hide" id="forgot_pass_input">
+        <input type="email" novalidate="">
+    </div>
+    <input class="js-to-hide" value="Skapa nytt lösenord" type="submit" id="forgot-pass-submit">
+    <div class="forgot-pass-email-sent-block">
+        <span id="forgot-pass-email-sent"></span>
+    </div>
+</form>
+</div>
+
+
+<div class="popup popup--saved-basket">
+    <div class="form__header">
+        <label>Sparad varukorg</label> <span class="close-popup--js fa fa-times" data-dismiss="modal" aria-label="Close"></span>
+    </div>
+
+    <div class="form-group">
+        <div class="row merge-cart-header">
+            <div class="col-sm-6 col-xs-6">
+                Produkt
+            </div>
+            <div class="col-sm-3 col-xs-3">
+                QuickOrderPrice
+            </div>
+            <div class="col-sm-1 col-xs-1">
+                Antal
+            </div>
+            <div class="col-sm-2 col-xs-2">
+                Summa
+            </div>
+        </div>
+    </div>
+
+    <p>Du har varor i din varukorg sedan förra gången du var inloggad, Vill du att tessa varor ska läggas till i din varukorg?</p>
+    <input type="hidden" id="anonymousUserId" value="">
+    <button class="js-mergecartbtn">Ja tack, jag vill behålla alla varorna</button>
+    <button class="js-replacecartbtn">Nej tack, jag behöver inte spara de gamla varorna</button>
+</div>
+<div id="registrationCommon">
+    <div id="registrationModal" class="modal-content registration-modal registration-modal--js">
+        <div class="modal-header">
+            <button type="button" class="close modal-close--js" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <span class="modal-title" id="loginModalLabel">RegisterAccount</span>
+        </div>
+        <div class="modal-header">
+            <div class="radio">
+                <label><input class="select-reg-type--js" type="radio" rel="company" checked="" name="customer-type">Company</label>
+                <label><input class="select-reg-type--js" type="radio" rel="private" name="customer-type">Private</label>
+                <label><input class="select-reg-type--js" type="radio" rel="public" name="customer-type">PublicAdministration</label>
+            </div>
+        </div>
+        
+<form action="/" method="post" novalidate="novalidate"><input id="cda63f31-2a94-4374-aed8-b90c19ffef02" name="uid" type="hidden" value="cda63f31-2a94-4374-aed8-b90c19ffef02"><input name="__RequestVerificationToken" type="hidden" value="OA1edP3UxVONKJuXcVPQ26qHRJ5hFoAWskBgBAjDrIwkXhMos8azKBKKDRsJLIHHETSlyMenlzrqKWokKe40RkwyB7ub1thVaSr33ayBX6A1">    <div class="registration-content--js" id="private" data-error="false">
+        <div class="modal-body">
+            
+            <div class="form-group">
+                <label class="requierd" for="FirstName">Förnamn</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="FirstName_regprivate" name="FirstName" placeholder="Förnamn" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="LastName">Efternamn</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="LastName_regprivate" name="LastName" placeholder="Efternamn" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="Email">E-postadress</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-email="Felaktigt email adress. V\u00E4nligen f\u00F6rs\u00F6k igen." data-val-required="Fältet krävs" id="Email_regprivate" name="Email" placeholder="E-postadress" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="Password">Password</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="Password_regprivate" name="Password" placeholder="Password" type="password">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="PasswordRepeat">PasswordRepeat</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="PasswordRepeat" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-equalto="ComparePasswords" data-val-equalto-other="*.Password" data-val-required="Fältet krävs" id="PasswordRepeat_regprivate" name="PasswordRepeat" placeholder="PasswordRepeat" type="password">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="MobilePhone">MobilePhoneLabel</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="MobilePhone" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-phone="PhoneIsIncorrect" data-val-required="Fältet krävs" id="MobilePhone_regprivate" name="MobilePhone" placeholder="MobilePhone" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="Address">Address</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="Address" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="Address_regprivate" name="Address" placeholder="Address" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label for="DeliveryInformation">DeliveryInformation</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="DeliveryInformation" data-valmsg-replace="true"></span>
+                <input class="form-control" id="DeliveryInformation_regprivate" name="DeliveryInformation" placeholder="DeliveryInformation" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="PostalCode">PostalCode</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="PostalCode" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="PostalCode_regprivate" name="PostalCode" placeholder="PostalCode" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="City">Stad</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="City" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="City_regprivate" name="City" placeholder="Stad" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label for="Country">Land</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="Country" data-valmsg-replace="true"></span>
+                
+                <input id="Country_hidden_regprivate" name="Country" type="hidden" value="Sverige">
+                <input class="form-control" disabled="disabled" id="Country_regprivate" name="Country" placeholder="Land" type="text" value="Sverige">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input data-val="true" data-val-required="The RejectNewsletter field is required." id="Gdpr_regprivate" name="RejectNewsletter" type="checkbox" value="true"><input name="RejectNewsletter" type="hidden" value="false">RejectNewsletter
+                </label>
+            </div>
+        </div>
+        
+<div class="modal-footer">
+    <button style="float: left;" type="button" class="btn btn-default btn-change modal-close--js" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-default btn-change back-login">Tillbaka</button>
+    <button disable="" type="submit" class="btn btn-success btn-change create-account-footer" title="">CreateAccount</button>
+</div>
+
+    </div>
+</form>
+<form action="/" method="post" novalidate="novalidate"><input id="e698a6ac-355c-4289-8919-e11a9659227a" name="uid" type="hidden" value="e698a6ac-355c-4289-8919-e11a9659227a"><input name="__RequestVerificationToken" type="hidden" value="F0MXGJ22zBamnb0zbZ8dpW9swqbOr8ch_ACurAE2tjFokfRYcwg-I3frN7hHK5FybvW28GrsEjj7msPmOICZpTAG2v6Wai56W3tRhZSdzOo1">    <div class="registration-content--js active" id="company" data-error="false">
+        <div class="modal-body">
+            <div id="invalidCompanyCreation" style="display:none">
+                <span class="text-danger field-validation-error">RegisterOrgErrorPart1</span>
+                <br>
+                <a href="/offentlig-forvaltning">RegisterPublicAdministration</a>
+                <br>
+                <span class="text-danger field-validation-error">RegisterOrgErrorPart2</span>
+            </div>
+            <div id="companyExists" style="display:none">
+                <span class="text-danger field-validation-error">CompanyExists</span>
+            </div>
+            <div id="companyHasNoAddresses" style="display:none">
+                <span class="text-danger field-validation-error">CompanyHasNoAddresses</span>
+            </div>
+            <div class="errorMessage" style="display:none">
+                <span class="text-danger field-validation-error"></span>
+            </div>
+            <br>
+                        
+            <div class="form-group customerNumber" style="display: none;">
+                <label class="requierd" for="CustomerNumber">Kundnummer</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="CustomerNumber" data-valmsg-replace="true"></span>
+                <input class="form-control" id="CustomerNumber_regcompany" name="CustomerNumber" placeholder="Kundnummer" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="OrganisationNumber">OrganisationNumber</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="OrganisationNumber" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="OrganisationNumber_regcompany" name="OrganisationNumber" placeholder="OrganisationNumber" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="Email">E-postadress</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-email="Felaktigt email adress. V\u00E4nligen f\u00F6rs\u00F6k igen." data-val-required="Fältet krävs" id="Email_regcompany" name="Email" placeholder="E-postadress" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="Password">Password</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-required="Fältet krävs" id="Password_regcompany" name="Password" placeholder="Password" type="password">
+            </div>
+            <div class="form-group">
+                <label class="requierd" for="PasswordRepeat">PasswordRepeat</label>:
+                <span class="field-validation-valid text-danger" data-valmsg-for="PasswordRepeat" data-valmsg-replace="true"></span>
+                <input class="form-control" data-val="true" data-val-equalto="ComparePasswords" data-val-equalto-other="*.Password" data-val-required="Fältet krävs" id="PasswordRepeat_regcompany" name="PasswordRepeat" placeholder="PasswordRepeat" type="password">
+            </div>
+        </div>
+        
+<div class="modal-footer">
+    <button style="float: left;" type="button" class="btn btn-default btn-change modal-close--js" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-default btn-change back-login">Tillbaka</button>
+    <button disable="" type="submit" class="btn btn-success btn-change create-account-footer" title="">CreateAccount</button>
+</div>
+
+    </div>
+</form>
+        <div class="registration-content--js" id="public">
+            <div class="modal-body">
+                <a href="/offentlig-forvaltning">RegisterPublicAdministration</a>
+            </div>
+            
+<div class="modal-footer">
+    <button style="float: left;" type="button" class="btn btn-default btn-change modal-close--js" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-default btn-change back-login">Tillbaka</button>
+    <button disable="" type="submit" class="btn btn-success btn-change create-account-footer" title="">CreateAccount</button>
+</div>
+;
+        </div>
+    </div>
+
+    <div id="selectAddressModal" class="modal-content select-company-address--js" style="display:none">
+        <div class="modal-header">
+            <button type="button" class="close modal-close--js" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <span class="modal-title">Välj adress</span>
+        </div>
+        <div class="modal-body">
+            <br>
+            <span>
+                Välj er fakturaadress. På nästa sida kommer ni att få ange övriga företagsuppgifter.
+            </span>
+            <br><br>
+
+            <select data-bind="options: addresses, optionsText: 'title', optionsValue: 'index'"></select>
+            <br><br>
+        </div>
+        <div class="modal-footer">
+            <button style="float: left;" type="button" class="btn btn-default btn-change modal-close--js" data-dismiss="modal">Close</button>
+            <button id="back-select-address" type="button" class="btn btn-default btn-change back-select-address">Tillbaka</button>
+            <button id="registrationNext" disable="" type="submit" class="btn btn-success btn-change" title="">Gå vidare</button>
+        </div>
+    </div>
+
+    <div id="registerAccountModal" class="modal-content register-account--js" style="display:none">
+        <div class="modal-header">
+            <button type="button" class="close modal-close--js" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <span class="modal-title">Registrera konto</span>
+        </div>
+        <div class="modal-body" data-bind="with: selectedAddress"></div>
+        <div class="modal-footer">
+            <button style="float: left;" type="button" class="btn btn-default btn-change modal-close--js" data-dismiss="modal">Close</button>
+            <button id="back-register-account" type="button" class="btn btn-default btn-change back-register-account">Tillbaka</button>
+            <button id="createAccount" disable="" type="submit" class="btn btn-success btn-change" title="">Skapa Konto</button>
+        </div>
+    </div>
+
+    <div id="welcomeModal" class="modal-content welcome--js" style="display:none">
+        <div class="modal-header">
+            <button type="button" class="close modal-close--js" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <span class="modal-title">Välkommen som kund till Office Depot!</span>
+        </div>
+        <div class="modal-body" data-bind="with: selectedAddress"></div>
+        <div class="modal-footer">
+            <button id="welcome" disable="" type="submit" class="btn btn-success" title="">Gå vidare</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!--NEW DESIGN-->
+<div class="popup popup--register">
+    <form class="form__register">
+        <div class="form__header"><label>Skapa konto</label> <span class="close-popup--js fa fa-times" data-dismiss="modal" aria-label="Close"></span></div>
+        <label>Företagare eller privatperson?</label>
+        <p>
+            Alla får samma fina erbjudande som konto kund! Du som är privatkund hos oss behöver bara ange e-post address och välja ditt lösenord.
+            Som företagskund behöver vi ditt organisationsnummer. Vi värnar om dina personuppgifter och följer gällande direktiv i enlighet med GDPR.
+            <span><span>*</span>Obligatorisk uppgift</span>
+        </p>
+        <label>Epostadress</label>
+        <div class="input input_email">
+            <input type="email"><span class="form__required">*</span>
+        </div>
+
+        <label>Lösenord</label>
+        <div class="input input_password">
+            <input type="Password"><span class="form__required">*</span>
+        </div>
+
+        <label>Upprepa lösenord</label>
+        <div class="input input_password_repeat">
+            <input type="Password"><span class="form__required">*</span>
+        </div>
+
+        <label>För dig som är företagskund:</label>
+        <div class="form__business-costumer">
+            <label>Organisationsnummer</label>
+            <div class="input input_org_number">
+                <input placeholder="XXXX XXXX-XX" type="text"><span class="form__required">*</span>
+            </div>
+            <label class="customer_number_label">Kundnummer</label>
+            <div class="input input_customer_number">
+                <input type="text">
+            </div>
+            <input type="submit" id="get-business-costumer-info--js" value="Hämta mina företagsuppgifter">
+            <div class="form__business-costumer-info">
+                <div class="one-address">
+                    <label>Fakturaaddress</label>
+                    <div class="address-name"></div>
+                    <div class="address-info"></div>
+                </div>
+                <div class="many-addresses">
+                    <span>Välj faktura adress</span>
+                    <p>Ert organisationsnummer matchar flera addresser</p>
+                    <div class="form__business-costumer-info-select">
+                        <select class="select-address">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form__business-error"></div>
+        </div>
+        <div class="input input_sendnewsletter"><input type="checkbox" checked="">Ja tack, jag vill få nyheter eller erbjudanden från Office depot</div>
+        <div class="input input_rememberme"><input type="checkbox">Kom ihåg mig vid nästa inloggningstillfälle</div>
+        <input id="register-user--js" value="Skapa konto" type="submit">
+        <div class="register-user-error"></div>
+        <label id="offentlig-forvaltning">Skapa konto - Offentlig förvaltning</label>
+    </form>
+    <div class="register-success-all">
+        <div class="form__header"><label>Tack!</label> <span class="close-popup--js fa fa-times" data-dismiss="modal" aria-label="Close"></span></div>
+        <span>Era uppgifter har registrerats och ni är nu inloggade.</span>
+    </div>
+    <div class="register-company">
+        <div class="form__header"><label>Skapa konto</label> <span class="close-popup--js fa fa-times"></span></div>
+        <label>Tack!</label>
+        <p>
+            Du är nu registrerad som kund hos Office Depot.
+            <br>
+            För minimal miljöpåverkan skickar vi gärna fakturor i digitalt format via
+            epost till dig. Granska uppgifterna här nedan och välj godkänn för att
+            slutföra.
+        </p>
+        <div class="company-address">
+            <label>Företagsinformation</label>
+            <div class="company-address-name"></div>
+            <div class="company-address-info"></div>
+            <div class="company-org-number"></div>
+        </div>
+        <label>Leveransinformation<span> (Våning, portkot etc)</span></label>
+        <form class="form__register-company-customer">
+            <div class="input input-delivery-info">
+                <input type="text">
+            </div>
+            <div class="input input-accept-digital-invoice">
+                <input type="checkbox" checked=""><span>Ja tack!</span> Skicka digital faktura till denna epostadress
+                <img class="input__image" alt="pdf-icon" src="https://icons-for-free.com/iconfiles/png/512/download+file+files+pdf+icon-1320184619509952330.png">
+            </div>
+            <div class="input input-invoice-email">
+                <input type="email">
+            </div>
+            <div class="register-success__contact-block">
+                <label>Kontaktperson</label>
+                <div class="register-success__contact-person">
+                    <div class="input input-firstname">
+                        <label>Förnamn</label>
+                        <input type="text"><span class="form__required">*</span>
+                    </div>
+                    <div class="input input-lastname">
+                        <label>Efternamn</label><input type="text">
+                    </div>
+                </div>
+            </div>
+            <input class="register-company-customer-btn" value="Godkänn" type="submit">
+            <div class="register-user-error"></div>
+        </form>
+    </div>
+</div>
+<div class="popup popup--reset-pass">
+    <form class="form__reset-pass">
+        <div class="form__header"><label>ResetPasswordModalLabel</label> <span class="close-popup--js fa fa-times" data-dismiss="modal" aria-label="Close"></span></div>
+        
+        <label class="js-to-hide">Password</label>
+        <div class="input js-to-hide" id="reset_pass_input">
+            <input type="password" id="reset_pass">
+        </div>
+        <label class="js-to-hide">PasswordRepeat</label>
+        <div class="input js-to-hide" id="reset_pass_repeat_input">
+            <input type="password" id="reset_pass_repeat">
+        </div>
+        <input type="hidden" id="reset_pass_hash">
+        <input disable="" class="js-to-hide" value="ResetPasswordSendLabel" type="submit" id="reset_pass_submit">
+        <div class="reset-pass-result-block">
+            <span id="reset-pass-result"></span>
+        </div>
+    </form>
+</div>
+    </div>
+</div>
+<compontent src="/components/comp/leveransadress.html"></compontent>
+<div class="scroll-top"><i class="fa fa-arrow-up"></i></div>
